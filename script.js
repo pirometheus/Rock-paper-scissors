@@ -1,19 +1,21 @@
 function getComputerChoice(ranNum) {
     if (ranNum < 0.33) {
-        console.log("rock");
+        return "rock";
     } else if (ranNum>= 0.33 && ranNum<=0.66) {
-        console.log("paper");
+        return "paper";
     } else {
-        console.log("scissor");
+        return "scissor";
     }
 }
+
+// Fix the getComputerChoice. This func must be fixed with Math.random()
 
 let userChoice=prompt("Write rock, paper or scissor!");
 
 function getHumenChoice() {
     return userChoice;
 }
-console.log(`User choise: ${userChoice}`)
+console.log(`You choose: ${userChoice}`)
 
 let humenScore=0;
 let computerScore=0;
@@ -39,3 +41,4 @@ const humanSelection=getHumenChoice(userChoice).toLowerCase();
 const computerSelection=getComputerChoice(Math.random);
 console.log(`Computer Choice: ${computerSelection}`);
 playRound(humanSelection,computerSelection);
+
