@@ -10,4 +10,10 @@ function getComputerChoice(ranNum) {
 
 console.log(getComputerChoice(Math.random()));
 
+let userChoice=prompt("Write rock, paper or scissor!");
+
+function getHumenChoice() {
+    return userChoice;
+}
+console.log(`User choise: ${userChoice}`)
 
