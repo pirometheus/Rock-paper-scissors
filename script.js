@@ -8,7 +8,7 @@ function getComputerChoice(ranNum) {
     }
 }
 
-// Fix the getComputerChoice. This func must be fixed with Math.random()
+function playGame() {
 
 let userChoice=prompt("Write rock, paper or scissor!");
 
@@ -17,7 +17,7 @@ function getHumenChoice() {
 }
 console.log(`You choose: ${userChoice}`)
 
-let humenScore=0;
+let humanScore=0;
 let computerScore=0;
 
 function playRound(humanChoice,computerChoice){
@@ -30,7 +30,7 @@ function playRound(humanChoice,computerChoice){
     } else if (humanChoice=="scissor" && computerChoice=="paper") {
         console.log("You win! Scissor beats Paper");
     } else if (humanChoice=="scissor" && computerChoice=="rock") {
-        console.log("You lose! Rock beats Scissor");
+        console.log("You lose! Rock beats Scissor");rock
     }  else if (humanChoice=="paper" && computerChoice=="rock") {
         console.log("You win! Paper beats Rock");
     } else {
@@ -38,7 +38,24 @@ function playRound(humanChoice,computerChoice){
     }
 }
 const humanSelection=getHumenChoice(userChoice).toLowerCase();
-const computerSelection=getComputerChoice(Math.random);
-console.log(`Computer Choice: ${computerSelection}`);
+const computerSelection=getComputerChoice(Math.random);+
+console.log(`Computer choose: ${computerSelection}`);
 playRound(humanSelection,computerSelection);
+}
+
+for (round=1;round<=2;round++) {
+    playGame(round);
+    console.log(playGame(round));
+    
+
+    // if (playGame(round).slice(3,6)=="win"){
+    //     humanScore++;
+    //     console.log(`Your score: ${humanScore}  Computers score: ${computerScore}`);
+    // } else if (playGame(round).slice(3,6)=="los") {
+    //     computerScore++;
+    //     console.log(`Your score: ${humanScore}  Computers score: ${computerScore}`);
+    // } else {
+    //     console.log(`Your score: ${humanScore}  Computers score: ${computerScore}`);
+    // }
+}
 
