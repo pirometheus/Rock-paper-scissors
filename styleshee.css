@@ -4,4 +4,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+p {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
 }
