@@ -13,7 +13,8 @@ let computerScore=0;
 
 function playGame() {
 
-let userChoice=prompt("Write rock, paper or scissor!");
+// let userChoice=prompt("Write rock, paper or scissor!");
+// Here comes the user choice 
 
 function getHumenChoice() {
     return userChoice;
