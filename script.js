@@ -11,17 +11,25 @@ function getComputerChoice(ranNum) {
 let humanScore=0;
 let computerScore=0;
 
-function playGame() {
+const rock = document.querySelector("#rock");
+rock.addEventListener("click",()=>{playGame("rock")});
 
-// let userChoice=prompt("Write rock, paper or scissor!");
-// Here comes the user choice 
+const scissor = document.querySelector("#scissor");
+scissor.addEventListener("click",()=>{playGame("scissor")});
 
-function getHumenChoice() {
-    return userChoice;
-}
-console.log(`You choose: ${userChoice}`)
+const paper = document.querySelector("#paper");
+paper.addEventListener("click", ()=>{playGame("paper")});
 
-const humanSelection=getHumenChoice(userChoice).toLowerCase();
+function playGame(humanSelection) {
+
+//userChoice =prompt("write smth");
+
+// function getHumenChoice() {
+//     return userChoice;
+// }
+console.log(`You choose: ${humanSelection}`);
+
+// const humanSelection=getHumenChoice(userChoice).toLowerCase();
 const computerSelection=getComputerChoice(Math.random());
 console.log(`Computer choose: ${computerSelection}`);
 
@@ -63,12 +71,15 @@ function playRound(humanChoice,computerChoice){
     }
 }
 
+
 playRound(humanSelection,computerSelection);
 }
 
-for (round=1;round<=5;round++) {
-    playGame(round);
-}
+
+
+// for (round=1;round<=5;round++) {
+//     playGame(round);
+// }
 
 if (humanScore==computerScore){
     console.log("No one wins! Play again");
@@ -77,3 +88,7 @@ if (humanScore==computerScore){
 } else {
     console.log("Game Over! Computer wins");
 }
+
+
+
+//Learning area#
