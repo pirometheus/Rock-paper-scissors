@@ -25,4 +25,23 @@ button {
 button p {
     color: red;
     font-weight: bold;
+    padding: 5px 5px;
+}
+
+#choiceHuman, #choiceComputer {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: large;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+#roundContainer {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
 }
